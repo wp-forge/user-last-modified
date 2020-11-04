@@ -3,7 +3,7 @@ name: Lint
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - '**.php'
   pull_request:
