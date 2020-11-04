@@ -1,0 +1,34 @@
+{
+  "name": "wp-forge/user-last-modified",
+  "description": "A WordPress code library for tracking the user last modified date and time.",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Micah Wood",
+      "email": "micah@wpscholar.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/UserLastModified.php"
+    ],
+    "files": [
+      "src/bootstrap.php"
+    ]
+  },
+  "require-dev": {
+    "wpscholar/phpcs-standards-wpscholar": "^1.0"
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/phpcbf . --standard=WPScholar"
+    ],
+    "lint": [
+      "vendor/bin/phpcs . --standard=WPScholar -s"
+    ]
+  },
+  "scripts-descriptions": {
+    "fix": "Automatically fix coding standards issues where possible.",
+    "lint": "Check files against coding standards."
+  }
+}
